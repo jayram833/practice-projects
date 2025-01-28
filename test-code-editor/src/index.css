@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-color: rgb(71 85 105);
+}
+
+.btn-run {
+  color: rgb(124 45 18);
+  background-color: rgb(253, 186, 116);
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}

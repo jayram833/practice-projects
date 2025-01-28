@@ -1,0 +1,73 @@
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #e0e0e0; /* Light text color */
+  background: none; /* Remove background */
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  word-wrap: normal;
+  white-space: pre-wrap;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6a9955; /* Greenish color for comments */
+}
+
+.token.punctuation {
+  color: #ffffff; /* White color for punctuation */
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number {
+  color: #d69e2e; /* Golden color for properties, tags, numbers */
+}
+
+.token.selector,
+.token.attr-name {
+  color: #ff79c6; /* Pink color for selectors and attributes */
+}
+
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #f1fa8c; /* Light yellow for strings */
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+  color: #ffb86c; /* Orange for operators, URLs, variables */
+}
+
+.token.atrule,
+.token.keyword {
+  color: #63b3ed; /* Light blue for keywords and @ rules */
+}
+
+.token.function,
+.token.class-name {
+  color: #50fa7b; /* Light green for functions and class names */
+}
+
+.token.regex,
+.token.important,
+.token.bold {
+  color: #ff79c6; /* Pink for regex and important styles */
+}
+
+.token.important {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
