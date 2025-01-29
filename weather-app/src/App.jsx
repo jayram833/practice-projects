@@ -15,6 +15,7 @@ export default function App() {
 
   async function handleGetWeather(e) {
     e.preventDefault();
+    if (!city.length) return;
     try {
       const response = await fetch(
         `${baseURL}weather?q=${city}&units=metric&APPID=${key}`
