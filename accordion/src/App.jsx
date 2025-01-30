@@ -23,30 +23,38 @@ const data = [
 
 export default function App() {
   const [accordData, setAccordData] = useState(data);
+  const [ans, setAns] = useState(false);
   function handleAgree(id) {
     setAccordData(
       accordData.map((item) =>
         item.id === id ? { ...item, isAgreed: !item.isAgreed } : item
       )
     );
+    setAns(false);
+  }
+
+  function handleSubmit() {
+    const ans = accordData.every((item) => item.isAgreed);
+    if (ans) setAns(true);
   }
   return (
     <div>
       <h1>Terms & Conditions</h1>
-
       <div className="accords-container">
         {accordData.map((item) => (
           <Accordion key={item.id} accordionData={item} onAgree={handleAgree} />
         ))}
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit" onClick={handleSubmit}>
+        Submit
+      </button>
+      {ans && <p style={{ color: "green" }}>Form Submitted Successfully!</p>}
     </div>
   );
 }
 
 function Accordion({ accordionData, onAgree }) {
   const { id, title, termText, isAgreed } = accordionData;
-
   return (
     <div className="accord">
       <h3>{title}</h3>
