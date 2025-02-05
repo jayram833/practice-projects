@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import usePage from "./hooks/usePage";
 import { Box, Skeleton, Typography, Button } from "@mui/material";
 
@@ -7,6 +7,7 @@ const numBtn = Array.from({ length: 10 }, (_, i) => i + 1);
 function App() {
   const [pageNum, setPageNum] = useState(1);
   const [imgLoaded, setImgLoaded] = useState(false);
+
   const {
     pageData: {
       email,
@@ -16,24 +17,20 @@ function App() {
     },
     error,
     loading,
-  } = usePage(`https://reqres.in/api/users/${pageNum}`);
-
-  const numClicks = useRef(0);
+  } = usePage(`https://reqres.in/api/users/${pageNum}`, pageNum);
 
   function handleClick(id) {
-    numClicks.current += 1;
     setPageNum(id);
-    setImgLoaded(false); // Reset image loading state
+    setImgLoaded(false);
   }
 
   return (
     <div className="app">
-      <h1>useRef Hook</h1>
+      <h1>useRef Hook - API Caching</h1>
 
       {error && <Typography color="error">{error}</Typography>}
       <Box sx={{ width: 700, padding: 2 }}>
         <div className="card">
-          {/* Show skeleton while loading */}
           {loading || !imgLoaded ? (
             <>
               <Skeleton
@@ -42,12 +39,11 @@ function App() {
                 height={200}
                 animation="wave"
               />
-              <Skeleton variant="text" animation="wave" />
+              <Skeleton variant="text" animation="wave" sx={{ padding: 1 }} />
               <Skeleton variant="text" animation="wave" />
             </>
           ) : null}
 
-          {/* Image should always be in the DOM */}
           <img
             src={pic}
             alt={`${firstName} ${lastName}`}
@@ -60,7 +56,6 @@ function App() {
             }}
           />
 
-          {/* Show text only when data is available and image has loaded */}
           {!loading && imgLoaded && (
             <>
               <Typography variant="h6">
