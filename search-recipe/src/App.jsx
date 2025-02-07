@@ -1,10 +1,13 @@
 "https://dummyjson.com/recipes/search?q=Margherita";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function App() {
   const [inputText, setInputText] = useState("");
   const [recipeData, setRecipeData] = useState([]);
+  const [showResults, setShowResults] = useState(false);
+
+  const inputRef = useRef();
 
   async function getRecipe() {
     try {
@@ -15,7 +18,6 @@ export default function App() {
       );
       if (!response.ok) throw new Error("Failed to fetch!");
       const { recipes } = await response.json();
-      console.log(recipes);
       setRecipeData(recipes);
     } catch (e) {
       console.error(e);
@@ -23,9 +25,11 @@ export default function App() {
   }
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      getRecipe();
-    }, 500);
+    inputRef.current.focus();
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(getRecipe, 500);
 
     return () => clearTimeout(timer);
   }, [inputText]);
@@ -39,14 +43,21 @@ export default function App() {
           value={inputText}
           placeholder="Search recipe..."
           onChange={(e) => setInputText(e.target.value)}
+          ref={inputRef}
+          onFocus={() => setShowResults(true)}
+          onBlur={() => setShowResults(false)}
         />
       </div>
-      <div className="results">
-        <ul>
-          {recipeData.length > 0 &&
-            recipeData.map((recipe) => <li key={recipe.id}>{recipe.name}</li>)}
-        </ul>
-      </div>
+      {showResults && (
+        <div className="results">
+          <ul>
+            {recipeData.length > 0 &&
+              recipeData.map((recipe) => (
+                <li key={recipe.id}>{recipe.name}</li>
+              ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

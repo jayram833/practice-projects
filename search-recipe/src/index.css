@@ -36,3 +36,7 @@ html {
   padding: 7px;
   margin-top: 5px;
 }
+.results ul li:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
