@@ -35,7 +35,6 @@ export default function App() {
   function handleDelete(id) {
     dispatch({ type: "delete", payload: id });
   }
-
   return (
     <div className="app">
       <h1>Todo List using useReducer hook</h1>

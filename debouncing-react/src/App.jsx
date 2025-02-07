@@ -1,31 +1,9 @@
-import { useEffect, useState } from "react";
-
-const URL = `https://fakestoreapi.com/products?search=`;
+import { useState } from "react";
+import useApi from "./useApi";
 
 export default function App() {
   const [query, setQuery] = useState("");
-  const [result, setResult] = useState([]);
-
-  useEffect(() => {
-    async function getProducts() {
-      if (!query.length) return;
-      try {
-        const response = await fetch(`${URL}${query}`);
-        if (!response.ok) throw new Error("Failed to fetch");
-
-        const data = await response.json();
-        setResult(data);
-      } catch (e) {
-        console.error(e);
-      }
-    }
-
-    const timer = setTimeout(() => {
-      getProducts();
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, [query]);
+  const { result, loading, error } = useApi(query);
 
   return (
     <div>
@@ -35,6 +13,8 @@ export default function App() {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
+      {loading && <p>Loading...</p>}
+      {error && <p>Error: {error}</p>}
       <ul>
         {result.length > 0 &&
           result.map((product) => (
@@ -49,7 +29,7 @@ function ProductCard({ product }) {
   const { image: path, title, description, price } = product;
   return (
     <div className="product">
-      <img src={path} alt="" />
+      <img src={path} alt={title} />
       <p>{title}</p>
       <p className="price">₹ {price}</p>
       {/* <p>{description}</p> */}
