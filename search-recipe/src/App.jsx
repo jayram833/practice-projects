@@ -29,7 +29,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const timer = setTimeout(getRecipe, 500);
+    const timer = setTimeout(getRecipe, 300);
 
     return () => clearTimeout(timer);
   }, [inputText]);
