@@ -31,6 +31,7 @@ function Password() {
       <input
         type={type}
         style={{ width: "300px", padding: "8px", fontSize: "15px" }}
+        placeholder="password"
       />
       <span
         onClick={handleToggle}
