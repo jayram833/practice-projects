@@ -9,6 +9,7 @@ function Cart({ cart, setIsCartOpen, onDelete }) {
             setIsCartOpen(false)
         }
     }
+
     useEffect(() => {
         document.addEventListener("mousedown", handleClickOutside)
         return () => {
