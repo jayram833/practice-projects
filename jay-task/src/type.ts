@@ -5,3 +5,4 @@ export interface Task {
   category: string,
   id: number
 }
+export type Theme = "dark" | "light";
