@@ -31,6 +31,10 @@ function App() {
     setTasks([...tasks, formData])
   }
 
+  function handleDeleteTask(taskId) {
+    setTasks(tasks.filter(taskItem => taskItem.id !== taskId))
+  }
+
   return (
     <div className="dark:bg-slate-950 h-screen bg-slate-100  dark:text-gray-300">
       <Navbar theme={theme} setTheme={setTheme} />
@@ -47,7 +51,7 @@ function App() {
             <TaskForm setTaskForm={setTaskForm} onAddTask={handleAddTask} />}
         </div>
 
-        <Tasks tasks={tasks} />
+        <Tasks tasks={tasks} onDeleteTask={handleDeleteTask} />
       </div>
     </div>
   )

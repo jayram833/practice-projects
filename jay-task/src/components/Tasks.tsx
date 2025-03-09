@@ -1,9 +1,16 @@
-import { memo } from "react"
+import { memo, useState } from "react"
 import Task from "./Task"
 
 
-const Tasks = memo(function ({ tasks }) {
-    console.log("red")
+const Tasks = memo(function ({ tasks, onDeleteTask }) {
+    const [openTaskId, setOpenTaskId] = useState(null);
+    const handleToggleActions = (taskId) => {
+        setOpenTaskId((prev) => (prev === taskId ? null : taskId));
+    }
+
+
+
+
     return (
         <div className="overflow-x-auto overflow-hidden my-5 border-[0.4px] rounded-xl">
             <table className=" w-full border-collapse rounded-md">
@@ -17,7 +24,13 @@ const Tasks = memo(function ({ tasks }) {
                     </tr>
                 </thead>
                 <tbody>
-                    {tasks.map(task => <Task key={task.id} task={task} />)}
+                    {tasks.map(task => <Task
+                        key={task.id}
+                        task={task}
+                        isOpen={openTaskId === task.id}
+                        onToggleActions={() => handleToggleActions(task.id)}
+                        onDeleteTask={onDeleteTask}
+                    />)}
                 </tbody>
             </table>
         </div>

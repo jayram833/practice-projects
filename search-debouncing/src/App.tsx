@@ -1,4 +1,4 @@
-import { ChangeEventHandler, useEffect, useState } from "react"
+import { ChangeEvent, useEffect, useState } from "react"
 import data from "./MOCK_DATA.json"
 
 interface Result {
@@ -9,7 +9,7 @@ function App() {
   const [inputText, setInputText] = useState("");
   const [result, setResult] = useState<Result[]>([]);
 
-  function handleChange(e: ChangeEventHandler<HTMLInputElement>) {
+  function handleChange(e: ChangeEvent<HTMLInputElement>) {
     setInputText(e.target.value);
   }
 
@@ -23,8 +23,6 @@ function App() {
     }, 500)
     return () => clearTimeout(timer)
   }, [inputText]);
-
-
 
   return (
     <div className="bg-pink-600 p-5 h-screen">
