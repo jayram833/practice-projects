@@ -32,21 +32,23 @@ function App() {
   }
 
   return (
-    <div className="dark:bg-slate-950 bg-slate-100 px-5 dark:text-gray-300">
+    <div className="dark:bg-slate-950 h-screen bg-slate-100  dark:text-gray-300">
       <Navbar theme={theme} setTheme={setTheme} />
+      <div className="px-5">
 
-      <div className="flex justify-end pr-10">
-        {!taskForm &&
-          <button onClick={handleTaskForm} className="cursor-pointer dark:hover:bg-slate-800 self-center border-gray-500 border-[0.5px] rounded-md px-2 mt-4 py-1">+ Task</button>
-        }
+        <div className="flex justify-end">
+          {!taskForm &&
+            <button onClick={handleTaskForm} className="cursor-pointer dark:hover:bg-slate-800 self-center border-gray-500 border-[0.5px] rounded-md px-2 mt-4 py-1">+ Task</button>
+          }
+        </div>
+
+        <div>
+          {taskForm &&
+            <TaskForm setTaskForm={setTaskForm} onAddTask={handleAddTask} />}
+        </div>
+
+        <Tasks tasks={tasks} />
       </div>
-
-      <div>
-        {taskForm &&
-          <TaskForm setTaskForm={setTaskForm} onAddTask={handleAddTask} />}
-      </div>
-
-      <Tasks tasks={tasks} />
     </div>
   )
 }
