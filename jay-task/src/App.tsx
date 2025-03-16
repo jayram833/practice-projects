@@ -6,13 +6,12 @@ import Navbar from "./components/Navbar";
 import { Theme } from "./type";
 import Tasks from "./components/Tasks";
 
-
-
-
 function App() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [theme, setTheme] = useState<Theme>("light");
   const [taskForm, setTaskForm] = useState(false);
+  const [mode, setMode] = useState("add");
+  let tempData = {};
 
   useEffect(() => {
     document.documentElement.classList.remove("light", "dark");
@@ -35,6 +34,12 @@ function App() {
     setTasks(tasks.filter(taskItem => taskItem.id !== taskId))
   }
 
+  function handleEditTask(task) {
+    tempData = task;
+    setTaskForm(true);
+    setMode("edit");
+  }
+
   return (
     <div className="dark:bg-slate-950 h-screen bg-slate-100  dark:text-gray-300">
       <Navbar theme={theme} setTheme={setTheme} />
@@ -47,11 +52,13 @@ function App() {
         </div>
 
         <div>
-          {taskForm &&
-            <TaskForm setTaskForm={setTaskForm} onAddTask={handleAddTask} />}
+          {taskForm && mode === "edit" &&
+            <TaskForm setTaskForm={setTaskForm} onAddTask={handleAddTask} mode={mode} tempData={tempData} />}
+          {taskForm && mode === "add" &&
+            <TaskForm setTaskForm={setTaskForm} onAddTask={handleAddTask} mode={mode} />}
         </div>
 
-        <Tasks tasks={tasks} onDeleteTask={handleDeleteTask} />
+        <Tasks tasks={tasks} onDeleteTask={handleDeleteTask} onEditTask={handleEditTask} />
       </div>
     </div>
   )

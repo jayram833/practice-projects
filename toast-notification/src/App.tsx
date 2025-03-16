@@ -11,7 +11,7 @@ function App() {
 
     setTimeout(() => {
       setToasts((prevToasts) => prevToasts.filter((toast) => toast.id !== id));
-    }, 2000);
+    }, 4000);
   };
 
   return (

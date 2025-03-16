@@ -1,9 +1,9 @@
-import { FormEvent, useState } from "react"
+import { FormEvent, useEffect, useState } from "react"
 import { IoCloseOutline } from "react-icons/io5";
 
 import { Task } from "../type";
 
-function TaskForm({ setTaskForm, onAddTask }) {
+function TaskForm({ setTaskForm, onAddTask, mode, tempData }) {
     const [formData, setFormData] = useState<Task>({
         title: "",
         status: "pending",
@@ -34,6 +34,10 @@ function TaskForm({ setTaskForm, onAddTask }) {
     function handleFormClose() {
         setTaskForm(false)
     }
+
+    useEffect(() => {
+        setFormData(tempData);
+    }, [])
 
     return (
         <div className="fixed inset-0 bg-gray-400 bg-opacity-50 items-center backdrop-blur-sm flex justify-center">
@@ -75,7 +79,8 @@ function TaskForm({ setTaskForm, onAddTask }) {
                         <option value="testing">Testing</option>
                     </select>
                 </span>
-                <button className="cursor-pointer dark:hover:bg-slate-800 self-center border-gray-500 border-[0.5px] rounded-md px-2 mt-4 py-1">Add Task</button>
+                {mode === "add" ? <button className="cursor-pointer dark:hover:bg-slate-800 self-center border-gray-500 border-[0.5px] rounded-md px-2 mt-4 py-1">Add Task</button> :
+                    <button className="cursor-pointer dark:hover:bg-slate-800 self-center border-gray-500 border-[0.5px] rounded-md px-2 mt-4 py-1">Edit Task</button>}
             </form>
         </div>
     )
