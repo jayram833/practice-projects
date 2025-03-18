@@ -8,16 +8,32 @@ import dice6 from "../assets/dice-6.png";
 
 const diceImgArr = [dice1, dice2, dice3, dice4, dice5, dice6];
 
-let player1;
-let player2;
+const players = {
+    player1: {
+        currentScore: 0,
+        totalScore: 0
+    },
+    player2: {
+        currentScore: 0,
+        totalScore: 0
+    }
+};
+
 
 
 function Game() {
     const [currentDiceImage, setCurrentDiceImage] = useState(0);
+    const [currentScore, setCurrentScore] = useState(0);
+    const [currentPlayer, setCurrentPlayer] = useState(players["player1"]);
+
     function handleRollDice() {
         let rolledNumber = Math.trunc(Math.random() * 5) + 1;
         console.log(rolledNumber)
         setCurrentDiceImage(() => rolledNumber)
+
+        if (rolledNumber !== 0) {
+            setCurrentPlayer({ ...currentPlayer, currentScore: currentPlayer.currentScore + rolledNumber + 1 })
+        }
     }
     return (
         <div className=" flex justify-between m-5 max-w-[800px] h-[500px] relative p-5 rounded-md">
@@ -26,7 +42,7 @@ function Game() {
                 <h2 className="font-semibold text-6xl">0</h2>
                 <div className="text-center">
                     <p className="font-semibold text-2xl">CURRENT</p>
-                    <p className="font-semibold text-2xl">0</p>
+                    <p className="font-semibold text-2xl">{currentPlayer.currentScore}</p>
                 </div>
             </div>
             <div className="flex flex-col items-center gap-5 w-[400px] justify-around p-5 bg-lime-300">
@@ -34,7 +50,7 @@ function Game() {
                 <h2 className="font-semibold text-6xl">0</h2>
                 <div className="text-center">
                     <p className="font-semibold text-2xl">CURRENT</p>
-                    <p className="font-semibold text-2xl">0</p>
+                    <p className="font-semibold text-2xl">{currentPlayer.currentScore}</p>
                 </div>
             </div>
             <OverLay onRollDice={handleRollDice} currentDiceImage={currentDiceImage} />
