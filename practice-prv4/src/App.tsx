@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AddTaskForm from "./AddTaskForm";
 
 const tempData = [
   {
@@ -49,9 +50,17 @@ type PropsItems = {
 }
 function App() {
   const [data, setData] = useState(tempData);
+
+  function handleSubmit(newItem) {
+    const { category, ...rest } = newItem;
+    console.log(category, rest)
+    setData(data.map(item => item.id === category ? { ...item, items: [...item.items, newItem] } : item))
+  }
+
   return (
-    <div className="bg-lime-50">
+    <div className="bg-lime-50 flex flex-col items-center">
       <h1 className="text-4xl font-semibold text-center">Trello Board</h1>
+      <AddTaskForm onSubmit={handleSubmit} />
       <div className="flex gap-5 justify-center mt-5 p-5">
         {data.map(item => <Section key={item.id} item={item} />)}
       </div>
