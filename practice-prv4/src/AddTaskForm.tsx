@@ -1,7 +1,17 @@
 import { useState } from "react"
 
-function AddTaskForm({ onSubmit }) {
-    const [formData, setFormData] = useState({
+type SubmitProps = {
+    onSubmit: () => void
+}
+
+type FormData = {
+    id: string,
+    task: string,
+    category: string
+}
+
+function AddTaskForm({ onSubmit }: SubmitProps) {
+    const [formData, setFormData] = useState<FormData>({
         id: "" + Date.now(),
         task: "",
         category: ""
