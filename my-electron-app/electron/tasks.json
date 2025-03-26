@@ -1,37 +1,9 @@
 [
   {
-    "id": 1,
-    "title": "Finish React project",
-    "description": "Finalize the to-do app and test all features",
+    "id": 1743030765734,
+    "title": "test",
+    "description": "test",
     "status": "pending",
-    "priority": "high"
-  },
-  {
-    "id": 2,
-    "title": "Prepare for interview",
-    "description": "Review advanced JavaScript and React concepts",
-    "status": "complete",
-    "priority": "medium"
-  },
-  {
-    "id": 1743026963182,
-    "title": "qwe",
-    "description": "wqe",
-    "status": "inProgress",
-    "priority": "medium"
-  },
-  {
-    "id": 1743027453124,
-    "title": "edew",
-    "description": "we",
-    "status": "pending",
-    "priority": "medium"
-  },
-  {
-    "id": 1743027471372,
-    "title": "jay",
-    "description": "jay",
-    "status": "completed",
-    "priority": "high"
+    "priority": "low"
   }
 ]

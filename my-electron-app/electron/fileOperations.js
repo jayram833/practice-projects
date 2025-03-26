@@ -26,4 +26,18 @@ async function writeTasks(tasks) {
     }
 }
 
-export { readTasks, writeTasks };
+
+async function deleteTask(taskId) {
+    try {
+        console.log(taskId)
+        const tasks = await readTasks();
+        const updatedTasks = tasks.filter(task => task.id !== taskId);
+        await writeTasks(updatedTasks);
+        return { success: true, message: "Task deleted successfully", tasks: updatedTasks };
+    } catch (e) {
+        console.error("Error deleting task:", e);
+        return { success: false, message: "Failed to delete task" };
+    }
+}
+
+export { readTasks, writeTasks, deleteTask };

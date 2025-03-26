@@ -1,5 +1,5 @@
 import { ipcMain } from "electron";
-import { readTasks, writeTasks } from "./fileOperations.js"
+import { readTasks, writeTasks, deleteTask } from "./fileOperations.js"
 
 
 ipcMain.handle("add-task", async function (event, newTask) {
@@ -23,4 +23,8 @@ ipcMain.handle("fetch-tasks", async function () {
         console.error("Error reading tasks:", error);
         return { success: false, message: "Failed to load tasks" };
     }
+})
+
+ipcMain.handle("delete-task", async function (event, taskId) {
+    return await deleteTask(taskId);
 })
