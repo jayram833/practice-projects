@@ -12,6 +12,10 @@ function App() {
     inputRef.current.value="";
   }
 
+  function handleDelete(){
+    setStoredValue([])
+  }
+
   return (
     <div>
         <h1>Memo, useMemo and useCallback in react</h1>
@@ -25,6 +29,7 @@ function App() {
         <ul>
           {storedValue.map(item=> <li key={item}>{item}</li>)}
         </ul>
+        <button onClick={handleDelete}>Delete Names</button>
     </div>
   )
 }
