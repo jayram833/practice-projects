@@ -23,7 +23,8 @@ function TaskList() {
 
     return (
         <div>
-            <table className="w-full border-collapse bg-white shadow-md rounded-lg">
+            <table className="w-full max-w-[1200px] mx-auto border-collapse bg-white shadow-md rounded-lg">
+
                 <thead>
                     <tr className="bg-gray-100 text-left text-gray-700 border-b border-gray-300">
                     <th className="px-4 py-2 font-semibold">Title</th>

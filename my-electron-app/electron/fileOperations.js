@@ -1,4 +1,4 @@
-import fs from "fs/promises";  // ✅ Use fs/promises
+import fs from "fs/promises";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import path from "path";
@@ -8,8 +8,17 @@ const __dirname = dirname(__filename);
 
 const TASKS_FILE = path.join(__dirname, "tasks.json");
 
+async function ensureFileExists() {
+    try {
+        await fs.access(TASKS_FILE);
+    } catch {
+        await fs.writeFile(TASKS_FILE, "[]", "utf-8");
+    }
+}
+
 async function readTasks() {
     try {
+        await ensureFileExists();
         const data = await fs.readFile(TASKS_FILE, "utf-8");
         return JSON.parse(data);
     } catch (e) {
@@ -26,10 +35,8 @@ async function writeTasks(tasks) {
     }
 }
 
-
 async function deleteTask(taskId) {
     try {
-        console.log(taskId)
         const tasks = await readTasks();
         const updatedTasks = tasks.filter(task => task.id !== taskId);
         await writeTasks(updatedTasks);

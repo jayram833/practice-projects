@@ -14,7 +14,6 @@ ipcMain.handle("add-task", async function (event, newTask) {
     }
 })
 
-
 ipcMain.handle("fetch-tasks", async function () {
     try {
         const tasks = await readTasks();

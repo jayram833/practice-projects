@@ -15,12 +15,15 @@ const createWindow = function () {
         height: 600,
         webPreferences: {
             preload: `${__dirname}/preload.js`,
+            contextIsolation: true,
+            enableRemoteModule: false,
+            nodeIntegration: false,
         },
     });
     mainWindow.loadURL('http://localhost:5173');
 
     installExtension.default(installExtension.REACT_DEVELOPER_TOOLS)
-        .then((name) => console.log(`Added Extension: ${name}`))
+        .then((ext) => console.log(`Added Extension: ${ext.name}`))
         .catch((err) => console.log("Error installing extension:", err));
 
     mainWindow.on('closed', () => {
@@ -29,8 +32,8 @@ const createWindow = function () {
 };
 
 app.whenReady().then(() => {
+    // session.defaultSession.clearStorageData();
     createWindow();
-
     app.on('activate', () => {
         if (BrowserWindow.getAllWindows().length === 0) createWindow();
     });
