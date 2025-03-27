@@ -1,8 +1,8 @@
 import { app, BrowserWindow } from 'electron';
-import { dirname } from 'path';
+import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import installExtension from 'electron-devtools-installer';
-import "./taskHandlers.js"
+import "./taskHandlers.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -14,17 +14,26 @@ const createWindow = function () {
         width: 800,
         height: 600,
         webPreferences: {
-            preload: `${__dirname}/preload.js`,
+            preload: path.join(__dirname, "preload.js"),
             contextIsolation: true,
             enableRemoteModule: false,
             nodeIntegration: false,
         },
     });
-    mainWindow.loadURL('http://localhost:5173');
 
-    installExtension.default(installExtension.REACT_DEVELOPER_TOOLS)
-        .then((ext) => console.log(`Added Extension: ${ext.name}`))
-        .catch((err) => console.log("Error installing extension:", err));
+    const isDev = process.env.NODE_ENV === "development" || !app.isPackaged;
+
+    if (isDev) {
+        mainWindow.loadURL("http://localhost:5173");
+    } else {
+        mainWindow.loadURL(`file://${join(__dirname, "../dist/index.html")}`);
+    }
+
+    if (process.env.NODE_ENV === "development") {
+        installExtension.default(installExtension.REACT_DEVELOPER_TOOLS)
+            .then((ext) => console.log(`Added Extension: ${ext.name}`))
+            .catch((err) => console.log("Error installing extension:", err));
+    }
 
     mainWindow.on('closed', () => {
         mainWindow = null;
@@ -32,7 +41,6 @@ const createWindow = function () {
 };
 
 app.whenReady().then(() => {
-    // session.defaultSession.clearStorageData();
     createWindow();
     app.on('activate', () => {
         if (BrowserWindow.getAllWindows().length === 0) createWindow();
