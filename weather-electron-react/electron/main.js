@@ -2,14 +2,14 @@ import { app, BrowserWindow } from 'electron';
 import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import installExtension from 'electron-devtools-installer';
-import "./taskHandlers.js";
-import { autoUpdater } from 'electron-updater';
+import "./weather.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 let mainWindow;
 
+console.log('NODE_ENV:', process.env.NODE_ENV);
 const createWindow = function () {
     mainWindow = new BrowserWindow({
         width: 800,
@@ -26,7 +26,6 @@ const createWindow = function () {
 
     if (isDev) {
         mainWindow.loadURL("http://localhost:5173");
-        checkForUpdates();
     } else {
         mainWindow.loadURL(`file://${join(__dirname, "../dist/index.html")}`);
     }
@@ -41,32 +40,6 @@ const createWindow = function () {
         mainWindow = null;
     });
 };
-function checkForUpdates() {
-    autoUpdater.checkForUpdatesAndNotify();
-
-    autoUpdater.on('update-available', () => {
-        dialog.showMessageBox({
-            type: 'info',
-            title: 'Update Available',
-            message: 'A new version is available. Downloading now...',
-        });
-    });
-
-    autoUpdater.on('update-downloaded', () => {
-        dialog
-            .showMessageBox({
-                type: 'info',
-                title: 'Update Ready',
-                message: 'Install the update and restart now?',
-                buttons: ['Restart', 'Later'],
-            })
-            .then((result) => {
-                if (result.response === 0) {
-                    autoUpdater.quitAndInstall();
-                }
-            });
-    });
-}
 
 app.whenReady().then(() => {
     createWindow();

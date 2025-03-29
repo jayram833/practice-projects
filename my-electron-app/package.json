@@ -28,6 +28,7 @@
     "concurrently": "^9.1.2",
     "electron": "^35.1.0",
     "electron-builder": "^24.13.3",
+    "electron-updater": "^6.6.2",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
@@ -37,9 +38,19 @@
     "vite": "^6.2.0",
     "wait-on": "^8.0.3"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jayram833/practice-projects.git"
+  },
   "build": {
     "appId": "com.mycompany.myapp",
-    "productName": "My Electron App",
+    "productName": "Jay's Task Manager",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "jayram833",
+        "repo": "practice-projects"
+      }],
     "directories": {
       "output": "dist"
     },
@@ -51,7 +62,8 @@
       "target": "nsis"
     },
     "mac": {
-      "target": "dmg"
+      "target": "dmg",
+      "icon": "electron/camera.icns"
     },
     "linux": {
       "target": "AppImage"
