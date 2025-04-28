@@ -5,7 +5,6 @@ import Options from "./Options";
 import Button from "./Button";
 import ResultWindow from "./ResultWindow";
 
-// console.log(data)
 
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);

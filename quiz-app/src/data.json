@@ -1,502 +1,237 @@
 [
   {
-    "question": "What does HTML stand for?",
-    "options": [
-      "Hyper Trainer Marking Language",
-      "Hyper Text Marketing Language",
-      "Hyper Text Markup Language",
-      "Hyper Text Mark Language"
-    ],
-    "answer": "Hyper Text Markup Language"
+    "question": "What does the 'DOCTYPE' declaration in HTML do?",
+    "options": ["Declares a JavaScript function", "Specifies the HTML version", "Styles the page", "Adds comments to the document"],
+    "answer": "Specifies the HTML version"
   },
   {
-    "question": "Which CSS property is used to change text color?",
-    "options": [
-      "text-color",
-      "color",
-      "font-color",
-      "text-style"
-    ],
-    "answer": "color"
-  },
-  {
-    "question": "Which tag is used to create a hyperlink in HTML?",
-    "options": [
-      "<a>",
-      "<link>",
-      "<href>",
-      "<hyper>"
-    ],
-    "answer": "<a>"
-  },
-  {
-    "question": "Which JavaScript method is used to write to the browser console?",
-    "options": [
-      "console.write()",
-      "console.log()",
-      "document.log()",
-      "window.print()"
-    ],
-    "answer": "console.log()"
-  },
-  {
-    "question": "Which hook is used to handle state in a React functional component?",
-    "options": [
-      "useRef",
-      "useEffect",
-      "useContext",
-      "useState"
-    ],
-    "answer": "useState"
-  },
-  {
-    "question": "What is the default position value of a positioned element in CSS?",
-    "options": [
-      "relative",
-      "absolute",
-      "static",
-      "fixed"
-    ],
-    "answer": "static"
-  },
-  {
-    "question": "Which HTML element is used to define a table row?",
-    "options": [
-      "<td>",
-      "<tr>",
-      "<th>",
-      "<row>"
-    ],
+    "question": "Which HTML tag is used to define a table row?",
+    "options": ["<td>", "<tr>", "<table>", "<th>"],
     "answer": "<tr>"
   },
   {
-    "question": "What does DOM stand for in JavaScript?",
-    "options": [
-      "Document Object Model",
-      "Data Object Model",
-      "Digital Object Map",
-      "Document Orientation Model"
-    ],
-    "answer": "Document Object Model"
+    "question": "Which attribute is used to link an external CSS file in HTML?",
+    "options": ["src", "href", "link", "style"],
+    "answer": "href"
   },
   {
-    "question": "In React, what is the virtual DOM?",
-    "options": [
-      "A real copy of the DOM",
-      "A concept to reduce performance",
-      "An in-memory representation of the real DOM",
-      "A function that creates elements"
-    ],
-    "answer": "An in-memory representation of the real DOM"
+    "question": "Which HTML element is used to embed JavaScript code?",
+    "options": ["<style>", "<javascript>", "<script>", "<js>"],
+    "answer": "<script>"
   },
   {
-    "question": "Which CSS property controls the size of text?",
-    "options": [
-      "font-weight",
-      "text-style",
-      "font-size",
-      "text-size"
-    ],
-    "answer": "font-size"
+    "question": "Which HTML tag is used for inserting a line break?",
+    "options": ["<break>", "<br>", "<lb>", "<hr>"],
+    "answer": "<br>"
   },
   {
-    "question": "What does HTML stand for? (variant 1)",
-    "options": [
-      "Hyper Trainer Marking Language",
-      "Hyper Text Marketing Language",
-      "Hyper Text Markup Language",
-      "Hyper Text Mark Language"
-    ],
-    "answer": "Hyper Text Markup Language"
+    "question": "Which attribute specifies an image’s alternative text?",
+    "options": ["alt", "src", "title", "text"],
+    "answer": "alt"
   },
   {
-    "question": "Which CSS property is used to change text color? (variant 1)",
-    "options": [
-      "text-color",
-      "color",
-      "font-color",
-      "text-style"
-    ],
+    "question": "Which HTML tag is used to create an ordered list?",
+    "options": ["<ul>", "<ol>", "<li>", "<list>"],
+    "answer": "<ol>"
+  },
+  {
+    "question": "Which input type is used for passwords in HTML forms?",
+    "options": ["text", "password", "hidden", "secure"],
+    "answer": "password"
+  },
+  {
+    "question": "How do you create a hyperlink in HTML?",
+    "options": ["<a href='url'>", "<link href='url'>", "<href='url'>", "<url>"],
+    "answer": "<a href='url'>"
+  },
+  {
+    "question": "Which HTML tag is used to define a footer for a document?",
+    "options": ["<section>", "<footer>", "<bottom>", "<nav>"],
+    "answer": "<footer>"
+  },
+  {
+    "question": "What is the correct tag for inserting a background audio file?",
+    "options": ["<bgmusic>", "<sound>", "<audio>", "<bgaudio>"],
+    "answer": "<audio>"
+  },
+  {
+    "question": "What does the 'placeholder' attribute do in an input field?",
+    "options": ["Sets default value", "Clears input", "Displays hint text", "Validates input"],
+    "answer": "Displays hint text"
+  },
+  {
+    "question": "Which CSS property changes the text color?",
+    "options": ["text-color", "color", "font-color", "foreground"],
     "answer": "color"
   },
   {
-    "question": "Which tag is used to create a hyperlink in HTML? (variant 1)",
-    "options": [
-      "<a>",
-      "<link>",
-      "<href>",
-      "<hyper>"
-    ],
-    "answer": "<a>"
+    "question": "Which CSS rule is used to center a block element horizontally?",
+    "options": ["margin: 0 auto;", "text-align: center;", "align: center;", "position: center;"],
+    "answer": "margin: 0 auto;"
   },
   {
-    "question": "Which JavaScript method is used to write to the browser console? (variant 1)",
-    "options": [
-      "console.write()",
-      "console.log()",
-      "document.log()",
-      "window.print()"
-    ],
-    "answer": "console.log()"
+    "question": "What does the z-index property in CSS control?",
+    "options": ["Zoom level", "Stacking order", "Opacity", "Position type"],
+    "answer": "Stacking order"
   },
   {
-    "question": "Which hook is used to handle state in a React functional component? (variant 1)",
-    "options": [
-      "useRef",
-      "useEffect",
-      "useContext",
-      "useState"
-    ],
-    "answer": "useState"
+    "question": "Which unit is relative to the font-size of the element?",
+    "options": ["px", "em", "%", "vh"],
+    "answer": "em"
   },
   {
-    "question": "What is the default position value of a positioned element in CSS? (variant 1)",
-    "options": [
-      "relative",
-      "absolute",
-      "static",
-      "fixed"
-    ],
+    "question": "Which property makes text bold in CSS?",
+    "options": ["font-weight", "text-style", "bold", "font-bold"],
+    "answer": "font-weight"
+  },
+  {
+    "question": "What is the default value of the position property in CSS?",
+    "options": ["relative", "absolute", "fixed", "static"],
     "answer": "static"
   },
   {
-    "question": "Which HTML element is used to define a table row? (variant 1)",
-    "options": [
-      "<td>",
-      "<tr>",
-      "<th>",
-      "<row>"
-    ],
-    "answer": "<tr>"
+    "question": "Which pseudo-class targets the first child of an element?",
+    "options": [":first-child", ":nth-child(1)", ":first", ":child(1)"],
+    "answer": ":first-child"
   },
   {
-    "question": "What does DOM stand for in JavaScript? (variant 1)",
-    "options": [
-      "Document Object Model",
-      "Data Object Model",
-      "Digital Object Map",
-      "Document Orientation Model"
-    ],
-    "answer": "Document Object Model"
+    "question": "How do you make a list display horizontally?",
+    "options": ["display: inline;", "float: left;", "display: block;", "list-style: none;"],
+    "answer": "display: inline;"
   },
   {
-    "question": "In React, what is the virtual DOM? (variant 1)",
-    "options": [
-      "A real copy of the DOM",
-      "A concept to reduce performance",
-      "An in-memory representation of the real DOM",
-      "A function that creates elements"
-    ],
-    "answer": "An in-memory representation of the real DOM"
+    "question": "Which CSS property sets the spacing between lines of text?",
+    "options": ["line-spacing", "line-height", "text-spacing", "spacing"],
+    "answer": "line-height"
   },
   {
-    "question": "Which CSS property controls the size of text? (variant 1)",
-    "options": [
-      "font-weight",
-      "text-style",
-      "font-size",
-      "text-size"
-    ],
-    "answer": "font-size"
+    "question": "How do you apply a CSS rule to all <p> elements?",
+    "options": ["p {}", "#p {}", ".p {}", "*p {}"],
+    "answer": "p {}"
   },
   {
-    "question": "What does HTML stand for? (variant 2)",
-    "options": [
-      "Hyper Trainer Marking Language",
-      "Hyper Text Marketing Language",
-      "Hyper Text Markup Language",
-      "Hyper Text Mark Language"
-    ],
-    "answer": "Hyper Text Markup Language"
+    "question": "Which property controls the visibility of an element?",
+    "options": ["display", "visibility", "opacity", "show"],
+    "answer": "visibility"
   },
   {
-    "question": "Which CSS property is used to change text color? (variant 2)",
-    "options": [
-      "text-color",
-      "color",
-      "font-color",
-      "text-style"
-    ],
-    "answer": "color"
+    "question": "What does the 'this' keyword refer to in JavaScript (inside a regular function)?",
+    "options": ["Global object", "Function name", "Current object", "Window object"],
+    "answer": "Window object"
   },
   {
-    "question": "Which tag is used to create a hyperlink in HTML? (variant 2)",
-    "options": [
-      "<a>",
-      "<link>",
-      "<href>",
-      "<hyper>"
-    ],
-    "answer": "<a>"
+    "question": "How do you declare a constant in JavaScript?",
+    "options": ["const", "let", "var", "define"],
+    "answer": "const"
   },
   {
-    "question": "Which JavaScript method is used to write to the browser console? (variant 2)",
-    "options": [
-      "console.write()",
-      "console.log()",
-      "document.log()",
-      "window.print()"
-    ],
-    "answer": "console.log()"
+    "question": "What will 'typeof null' return in JavaScript?",
+    "options": ["null", "object", "undefined", "string"],
+    "answer": "object"
   },
   {
-    "question": "Which hook is used to handle state in a React functional component? (variant 2)",
-    "options": [
-      "useRef",
-      "useEffect",
-      "useContext",
-      "useState"
-    ],
+    "question": "Which method is used to convert JSON to a JavaScript object?",
+    "options": ["JSON.parse()", "JSON.stringify()", "JSON.convert()", "parse.JSON()"],
+    "answer": "JSON.parse()"
+  },
+  {
+    "question": "What does 'NaN' stand for?",
+    "options": ["Not a Number", "Null and None", "No available Number", "Negative and Null"],
+    "answer": "Not a Number"
+  },
+  {
+    "question": "Which keyword is used to handle exceptions in JavaScript?",
+    "options": ["catch", "error", "exception", "throwError"],
+    "answer": "catch"
+  },
+  {
+    "question": "How can you create a new array by combining two arrays?",
+    "options": ["concat()", "merge()", "append()", "combine()"],
+    "answer": "concat()"
+  },
+  {
+    "question": "Which loop is best for iterating over an array in JavaScript?",
+    "options": ["for", "for...of", "while", "do...while"],
+    "answer": "for...of"
+  },
+  {
+    "question": "What does the '===' operator check in JavaScript?",
+    "options": ["Equality with type coercion", "Assignment", "Strict equality", "Inequality"],
+    "answer": "Strict equality"
+  },
+  {
+    "question": "Which object method removes the last element from an array?",
+    "options": ["pop()", "shift()", "remove()", "slice()"],
+    "answer": "pop()"
+  },
+  {
+    "question": "Which method is used to delay execution of code?",
+    "options": ["setTimeout()", "delay()", "pause()", "setInterval()"],
+    "answer": "setTimeout()"
+  },
+  {
+    "question": "Which hook is used to manage state in a functional React component?",
+    "options": ["useState", "useEffect", "useRef", "useContext"],
     "answer": "useState"
   },
   {
-    "question": "What is the default position value of a positioned element in CSS? (variant 2)",
-    "options": [
-      "relative",
-      "absolute",
-      "static",
-      "fixed"
-    ],
-    "answer": "static"
+    "question": "Which lifecycle method runs after the first render in class components?",
+    "options": ["componentDidMount", "componentWillMount", "render", "shouldComponentUpdate"],
+    "answer": "componentDidMount"
   },
   {
-    "question": "Which HTML element is used to define a table row? (variant 2)",
-    "options": [
-      "<td>",
-      "<tr>",
-      "<th>",
-      "<row>"
-    ],
-    "answer": "<tr>"
+    "question": "Which hook runs after every render by default?",
+    "options": ["useEffect", "useState", "useRef", "useMemo"],
+    "answer": "useEffect"
   },
   {
-    "question": "What does DOM stand for in JavaScript? (variant 2)",
-    "options": [
-      "Document Object Model",
-      "Data Object Model",
-      "Digital Object Map",
-      "Document Orientation Model"
-    ],
-    "answer": "Document Object Model"
+    "question": "How do you pass data from a parent to a child component in React?",
+    "options": ["Using props", "Using state", "Using context", "Using hooks"],
+    "answer": "Using props"
   },
   {
-    "question": "In React, what is the virtual DOM? (variant 2)",
-    "options": [
-      "A real copy of the DOM",
-      "A concept to reduce performance",
-      "An in-memory representation of the real DOM",
-      "A function that creates elements"
-    ],
+    "question": "Which tool is commonly used to create React apps quickly?",
+    "options": ["Create React App", "NPM Start", "React Generator", "Webpack Init"],
+    "answer": "Create React App"
+  },
+  {
+    "question": "Which JSX syntax correctly renders a JavaScript variable?",
+    "options": ["{variable}", "{{variable}}", "<variable>", "[variable]"],
+    "answer": "{variable}"
+  },
+  {
+    "question": "What must be unique for each item in a list in React?",
+    "options": ["key", "id", "class", "name"],
+    "answer": "key"
+  },
+  {
+    "question": "What does 'lifting state up' mean in React?",
+    "options": ["Moving state to a common ancestor", "Converting local to global state", "Using Redux", "Passing props to state"],
+    "answer": "Moving state to a common ancestor"
+  },
+  {
+    "question": "What is the purpose of useRef in React?",
+    "options": ["Reference DOM nodes", "Store global state", "Re-render on change", "Create a reducer"],
+    "answer": "Reference DOM nodes"
+  },
+  {
+    "question": "What is a Fragment in React?",
+    "options": ["Wrapper component without extra DOM", "A custom hook", "A third-party library", "A new JavaScript object"],
+    "answer": "Wrapper component without extra DOM"
+  },
+  {
+    "question": "Which React hook is best for performance optimization of computed values?",
+    "options": ["useMemo", "useEffect", "useCallback", "useReducer"],
+    "answer": "useMemo"
+  },
+  {
+    "question": "What is the virtual DOM in React?",
+    "options": ["An in-memory representation of the real DOM", "A browser extension", "An API", "A CSS library"],
     "answer": "An in-memory representation of the real DOM"
   },
   {
-    "question": "Which CSS property controls the size of text? (variant 2)",
-    "options": [
-      "font-weight",
-      "text-style",
-      "font-size",
-      "text-size"
-    ],
-    "answer": "font-size"
-  },
-  {
-    "question": "What does HTML stand for? (variant 3)",
-    "options": [
-      "Hyper Trainer Marking Language",
-      "Hyper Text Marketing Language",
-      "Hyper Text Markup Language",
-      "Hyper Text Mark Language"
-    ],
-    "answer": "Hyper Text Markup Language"
-  },
-  {
-    "question": "Which CSS property is used to change text color? (variant 3)",
-    "options": [
-      "text-color",
-      "color",
-      "font-color",
-      "text-style"
-    ],
-    "answer": "color"
-  },
-  {
-    "question": "Which tag is used to create a hyperlink in HTML? (variant 3)",
-    "options": [
-      "<a>",
-      "<link>",
-      "<href>",
-      "<hyper>"
-    ],
-    "answer": "<a>"
-  },
-  {
-    "question": "Which JavaScript method is used to write to the browser console? (variant 3)",
-    "options": [
-      "console.write()",
-      "console.log()",
-      "document.log()",
-      "window.print()"
-    ],
-    "answer": "console.log()"
-  },
-  {
-    "question": "Which hook is used to handle state in a React functional component? (variant 3)",
-    "options": [
-      "useRef",
-      "useEffect",
-      "useContext",
-      "useState"
-    ],
-    "answer": "useState"
-  },
-  {
-    "question": "What is the default position value of a positioned element in CSS? (variant 3)",
-    "options": [
-      "relative",
-      "absolute",
-      "static",
-      "fixed"
-    ],
-    "answer": "static"
-  },
-  {
-    "question": "Which HTML element is used to define a table row? (variant 3)",
-    "options": [
-      "<td>",
-      "<tr>",
-      "<th>",
-      "<row>"
-    ],
-    "answer": "<tr>"
-  },
-  {
-    "question": "What does DOM stand for in JavaScript? (variant 3)",
-    "options": [
-      "Document Object Model",
-      "Data Object Model",
-      "Digital Object Map",
-      "Document Orientation Model"
-    ],
-    "answer": "Document Object Model"
-  },
-  {
-    "question": "In React, what is the virtual DOM? (variant 3)",
-    "options": [
-      "A real copy of the DOM",
-      "A concept to reduce performance",
-      "An in-memory representation of the real DOM",
-      "A function that creates elements"
-    ],
-    "answer": "An in-memory representation of the real DOM"
-  },
-  {
-    "question": "Which CSS property controls the size of text? (variant 3)",
-    "options": [
-      "font-weight",
-      "text-style",
-      "font-size",
-      "text-size"
-    ],
-    "answer": "font-size"
-  },
-  {
-    "question": "What does HTML stand for? (variant 4)",
-    "options": [
-      "Hyper Trainer Marking Language",
-      "Hyper Text Marketing Language",
-      "Hyper Text Markup Language",
-      "Hyper Text Mark Language"
-    ],
-    "answer": "Hyper Text Markup Language"
-  },
-  {
-    "question": "Which CSS property is used to change text color? (variant 4)",
-    "options": [
-      "text-color",
-      "color",
-      "font-color",
-      "text-style"
-    ],
-    "answer": "color"
-  },
-  {
-    "question": "Which tag is used to create a hyperlink in HTML? (variant 4)",
-    "options": [
-      "<a>",
-      "<link>",
-      "<href>",
-      "<hyper>"
-    ],
-    "answer": "<a>"
-  },
-  {
-    "question": "Which JavaScript method is used to write to the browser console? (variant 4)",
-    "options": [
-      "console.write()",
-      "console.log()",
-      "document.log()",
-      "window.print()"
-    ],
-    "answer": "console.log()"
-  },
-  {
-    "question": "Which hook is used to handle state in a React functional component? (variant 4)",
-    "options": [
-      "useRef",
-      "useEffect",
-      "useContext",
-      "useState"
-    ],
-    "answer": "useState"
-  },
-  {
-    "question": "What is the default position value of a positioned element in CSS? (variant 4)",
-    "options": [
-      "relative",
-      "absolute",
-      "static",
-      "fixed"
-    ],
-    "answer": "static"
-  },
-  {
-    "question": "Which HTML element is used to define a table row? (variant 4)",
-    "options": [
-      "<td>",
-      "<tr>",
-      "<th>",
-      "<row>"
-    ],
-    "answer": "<tr>"
-  },
-  {
-    "question": "What does DOM stand for in JavaScript? (variant 4)",
-    "options": [
-      "Document Object Model",
-      "Data Object Model",
-      "Digital Object Map",
-      "Document Orientation Model"
-    ],
-    "answer": "Document Object Model"
-  },
-  {
-    "question": "In React, what is the virtual DOM? (variant 4)",
-    "options": [
-      "A real copy of the DOM",
-      "A concept to reduce performance",
-      "An in-memory representation of the real DOM",
-      "A function that creates elements"
-    ],
-    "answer": "An in-memory representation of the real DOM"
-  },
-  {
-    "question": "Which CSS property controls the size of text? (variant 4)",
-    "options": [
-      "font-weight",
-      "text-style",
-      "font-size",
-      "text-size"
-    ],
-    "answer": "font-size"
+    "question": "How can you prevent re-rendering of a component in React?",
+    "options": ["React.memo", "useEffect", "useState", "props.freeze"],
+    "answer": "React.memo"
   }
 ]
