@@ -1,9 +1,12 @@
-import AddFarmerForm from "./components/Farmer/AddFarmerForm"
+import AddFarmerForm from "./components/Farmer/AddFarmerForm";
+import Navbar from "./components/Navbar";
+
+import data from "./data.json"
 
 function App() {
   return (
     <div>
-      <h1 className="font-semibold text-4xl text-center">Govardhan Dairy</h1>
+      <Navbar />
       <AddFarmerForm />
     </div>
   )

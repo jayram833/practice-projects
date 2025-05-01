@@ -1,0 +1,83 @@
+[
+    {
+      "farmerId": "farmer_001",
+      "fullName": "Suresh Yadav",
+      "contactNumber": "+91 9876543211",
+      "village": "Rampur",
+      "isActive": true,
+      "dateAdded": "2025-04-28T10:30:00Z"
+    },
+    {
+      "farmerId": "farmer_002",
+      "fullName": "Anita Patil",
+      "contactNumber": "+91 9123456789",
+      "village": "Sangamner",
+      "isActive": true,
+      "dateAdded": "2025-04-28T11:00:00Z"
+    },
+    {
+      "farmerId": "farmer_003",
+      "fullName": "Rajesh Singh",
+      "contactNumber": "+91 9871234567",
+      "village": "Shirur",
+      "isActive": true,
+      "dateAdded": "2025-04-28T11:15:00Z"
+    },
+    {
+      "farmerId": "farmer_004",
+      "fullName": "Meena Deshmukh",
+      "contactNumber": "+91 9988776655",
+      "village": "Baramati",
+      "isActive": true,
+      "dateAdded": "2025-04-28T11:30:00Z"
+    },
+    {
+      "farmerId": "farmer_005",
+      "fullName": "Vijay Pawar",
+      "contactNumber": "+91 9111223344",
+      "village": "Loni",
+      "isActive": true,
+      "dateAdded": "2025-04-28T11:45:00Z"
+    },
+    {
+      "farmerId": "farmer_006",
+      "fullName": "Nisha Kulkarni",
+      "contactNumber": "+91 9876123456",
+      "village": "Junnar",
+      "isActive": true,
+      "dateAdded": "2025-04-28T12:00:00Z"
+    },
+    {
+      "farmerId": "farmer_007",
+      "fullName": "Arjun Patil",
+      "contactNumber": "+91 9998887776",
+      "village": "Chakan",
+      "isActive": true,
+      "dateAdded": "2025-04-28T12:15:00Z"
+    },
+    {
+      "farmerId": "farmer_008",
+      "fullName": "Radhika Shinde",
+      "contactNumber": "+91 8889997776",
+      "village": "Hadapsar",
+      "isActive": true,
+      "dateAdded": "2025-04-28T12:30:00Z"
+    },
+    {
+      "farmerId": "farmer_009",
+      "fullName": "Kishor More",
+      "contactNumber": "+91 8765432199",
+      "village": "Khed",
+      "isActive": true,
+      "dateAdded": "2025-04-28T12:45:00Z"
+    },
+    {
+      "farmerId": "farmer_010",
+      "fullName": "Smita Jadhav",
+      "contactNumber": "+91 9123459876",
+      "village": "Alandi",
+      "isActive": true,
+      "dateAdded": "2025-04-28T13:00:00Z"
+    }
+  ]
+  
