@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 
 
 const data = [
@@ -55,9 +55,9 @@ function App() {
 }
 
 
-function Tab({ label, onChangeTab, tabIndex, activeTab }) {
+const Tab = memo(function ({ label, onChangeTab, tabIndex, activeTab }) {
   return <button style={tabIndex === activeTab ? { "backgroundColor": "lime" } : undefined} onClick={() => onChangeTab(tabIndex)} className="bg-gray-200 px-2 py-1 m-1 rounded-md cursor-pointer">{label}</button>
-}
+})
 
 function NewTabModal({ onAddTab }) {
   const [formData, setFormData] = useState({
