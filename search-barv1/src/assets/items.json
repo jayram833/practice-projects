@@ -1,0 +1,527 @@
+[
+  {
+    "id": 1,
+    "name": "Butter Chicken",
+    "quantity": 15
+  },
+  {
+    "id": 2,
+    "name": "Paneer Tikka",
+    "quantity": 19
+  },
+  {
+    "id": 3,
+    "name": "Masala Dosa",
+    "quantity": 13
+  },
+  {
+    "id": 4,
+    "name": "Biryani",
+    "quantity": 14
+  },
+  {
+    "id": 5,
+    "name": "Chole Bhature",
+    "quantity": 7
+  },
+  {
+    "id": 6,
+    "name": "Samosa",
+    "quantity": 29
+  },
+  {
+    "id": 7,
+    "name": "Pav Bhaji",
+    "quantity": 6
+  },
+  {
+    "id": 8,
+    "name": "Rogan Josh",
+    "quantity": 14
+  },
+  {
+    "id": 9,
+    "name": "Rajma Chawal",
+    "quantity": 28
+  },
+  {
+    "id": 10,
+    "name": "Aloo Paratha",
+    "quantity": 5
+  },
+  {
+    "id": 11,
+    "name": "Idli",
+    "quantity": 24
+  },
+  {
+    "id": 12,
+    "name": "Vada Pav",
+    "quantity": 20
+  },
+  {
+    "id": 13,
+    "name": "Dhokla",
+    "quantity": 5
+  },
+  {
+    "id": 14,
+    "name": "Matar Paneer",
+    "quantity": 14
+  },
+  {
+    "id": 15,
+    "name": "Kadhi Chawal",
+    "quantity": 12
+  },
+  {
+    "id": 16,
+    "name": "Tandoori Chicken",
+    "quantity": 6
+  },
+  {
+    "id": 17,
+    "name": "Chicken Tikka",
+    "quantity": 15
+  },
+  {
+    "id": 18,
+    "name": "Palak Paneer",
+    "quantity": 11
+  },
+  {
+    "id": 19,
+    "name": "Baingan Bharta",
+    "quantity": 27
+  },
+  {
+    "id": 20,
+    "name": "Fish Curry",
+    "quantity": 13
+  },
+  {
+    "id": 21,
+    "name": "Dal Makhani",
+    "quantity": 23
+  },
+  {
+    "id": 22,
+    "name": "Poori",
+    "quantity": 18
+  },
+  {
+    "id": 23,
+    "name": "Korma",
+    "quantity": 25
+  },
+  {
+    "id": 24,
+    "name": "Naan",
+    "quantity": 5
+  },
+  {
+    "id": 25,
+    "name": "Bhindi Masala",
+    "quantity": 22
+  },
+  {
+    "id": 26,
+    "name": "Upma",
+    "quantity": 12
+  },
+  {
+    "id": 27,
+    "name": "Kesari Bath",
+    "quantity": 18
+  },
+  {
+    "id": 28,
+    "name": "Litti Chokha",
+    "quantity": 24
+  },
+  {
+    "id": 29,
+    "name": "Sarson Ka Saag",
+    "quantity": 8
+  },
+  {
+    "id": 30,
+    "name": "Makki Ki Roti",
+    "quantity": 25
+  },
+  {
+    "id": 31,
+    "name": "Pesarattu",
+    "quantity": 30
+  },
+  {
+    "id": 32,
+    "name": "Misal Pav",
+    "quantity": 20
+  },
+  {
+    "id": 33,
+    "name": "Thali",
+    "quantity": 24
+  },
+  {
+    "id": 34,
+    "name": "Neer Dosa",
+    "quantity": 25
+  },
+  {
+    "id": 35,
+    "name": "Hyderabadi Haleem",
+    "quantity": 7
+  },
+  {
+    "id": 36,
+    "name": "Chicken Chettinad",
+    "quantity": 28
+  },
+  {
+    "id": 37,
+    "name": "Appam",
+    "quantity": 19
+  },
+  {
+    "id": 38,
+    "name": "Avial",
+    "quantity": 13
+  },
+  {
+    "id": 39,
+    "name": "Kootu",
+    "quantity": 24
+  },
+  {
+    "id": 40,
+    "name": "Thepla",
+    "quantity": 17
+  },
+  {
+    "id": 41,
+    "name": "Undhiyu",
+    "quantity": 18
+  },
+  {
+    "id": 42,
+    "name": "Gatte Ki Sabzi",
+    "quantity": 11
+  },
+  {
+    "id": 43,
+    "name": "Dal Baati Churma",
+    "quantity": 7
+  },
+  {
+    "id": 44,
+    "name": "Laal Maas",
+    "quantity": 15
+  },
+  {
+    "id": 45,
+    "name": "Pakhala Bhata",
+    "quantity": 17
+  },
+  {
+    "id": 46,
+    "name": "Chingri Malai Curry",
+    "quantity": 5
+  },
+  {
+    "id": 47,
+    "name": "Shukto",
+    "quantity": 6
+  },
+  {
+    "id": 48,
+    "name": "Kosha Mangsho",
+    "quantity": 7
+  },
+  {
+    "id": 49,
+    "name": "Macher Jhol",
+    "quantity": 22
+  },
+  {
+    "id": 50,
+    "name": "Patishapta",
+    "quantity": 6
+  },
+  {
+    "id": 51,
+    "name": "Dum Aloo",
+    "quantity": 10
+  },
+  {
+    "id": 52,
+    "name": "Moong Dal Halwa",
+    "quantity": 19
+  },
+  {
+    "id": 53,
+    "name": "Gulab Jamun",
+    "quantity": 10
+  },
+  {
+    "id": 54,
+    "name": "Rasgulla",
+    "quantity": 25
+  },
+  {
+    "id": 55,
+    "name": "Jalebi",
+    "quantity": 18
+  },
+  {
+    "id": 56,
+    "name": "Kheer",
+    "quantity": 11
+  },
+  {
+    "id": 57,
+    "name": "Payasam",
+    "quantity": 28
+  },
+  {
+    "id": 58,
+    "name": "Sandesh",
+    "quantity": 13
+  },
+  {
+    "id": 59,
+    "name": "Malpua",
+    "quantity": 29
+  },
+  {
+    "id": 60,
+    "name": "Phirni",
+    "quantity": 29
+  },
+  {
+    "id": 61,
+    "name": "Imarti",
+    "quantity": 12
+  },
+  {
+    "id": 62,
+    "name": "Balushahi",
+    "quantity": 16
+  },
+  {
+    "id": 63,
+    "name": "Modak",
+    "quantity": 14
+  },
+  {
+    "id": 64,
+    "name": "Puran Poli",
+    "quantity": 26
+  },
+  {
+    "id": 65,
+    "name": "Shrikhand",
+    "quantity": 24
+  },
+  {
+    "id": 66,
+    "name": "Boondi Raita",
+    "quantity": 17
+  },
+  {
+    "id": 67,
+    "name": "Bhatura",
+    "quantity": 18
+  },
+  {
+    "id": 68,
+    "name": "Kachori",
+    "quantity": 13
+  },
+  {
+    "id": 69,
+    "name": "Methi Thepla",
+    "quantity": 7
+  },
+  {
+    "id": 70,
+    "name": "Sev Tameta",
+    "quantity": 29
+  },
+  {
+    "id": 71,
+    "name": "Khandvi",
+    "quantity": 13
+  },
+  {
+    "id": 72,
+    "name": "Handvo",
+    "quantity": 17
+  },
+  {
+    "id": 73,
+    "name": "Bisi Bele Bath",
+    "quantity": 5
+  },
+  {
+    "id": 74,
+    "name": "Obbattu",
+    "quantity": 13
+  },
+  {
+    "id": 75,
+    "name": "Khichdi",
+    "quantity": 16
+  },
+  {
+    "id": 76,
+    "name": "Sabudana Khichdi",
+    "quantity": 15
+  },
+  {
+    "id": 77,
+    "name": "Batata Vada",
+    "quantity": 30
+  },
+  {
+    "id": 78,
+    "name": "Thukpa",
+    "quantity": 18
+  },
+  {
+    "id": 79,
+    "name": "Momos",
+    "quantity": 30
+  },
+  {
+    "id": 80,
+    "name": "Butter Naan",
+    "quantity": 13
+  },
+  {
+    "id": 81,
+    "name": "Garlic Naan",
+    "quantity": 23
+  },
+  {
+    "id": 82,
+    "name": "Rava Dosa",
+    "quantity": 20
+  },
+  {
+    "id": 83,
+    "name": "Set Dosa",
+    "quantity": 5
+  },
+  {
+    "id": 84,
+    "name": "Akki Roti",
+    "quantity": 17
+  },
+  {
+    "id": 85,
+    "name": "Pani Puri",
+    "quantity": 15
+  },
+  {
+    "id": 86,
+    "name": "Sev Puri",
+    "quantity": 20
+  },
+  {
+    "id": 87,
+    "name": "Bhel Puri",
+    "quantity": 27
+  },
+  {
+    "id": 88,
+    "name": "Dahi Puri",
+    "quantity": 30
+  },
+  {
+    "id": 89,
+    "name": "Aloo Tikki",
+    "quantity": 11
+  },
+  {
+    "id": 90,
+    "name": "Chana Masala",
+    "quantity": 19
+  },
+  {
+    "id": 91,
+    "name": "Kachumber Salad",
+    "quantity": 10
+  },
+  {
+    "id": 92,
+    "name": "Tamatar Chaat",
+    "quantity": 28
+  },
+  {
+    "id": 93,
+    "name": "Bombay Sandwich",
+    "quantity": 18
+  },
+  {
+    "id": 94,
+    "name": "Paneer Bhurji",
+    "quantity": 29
+  },
+  {
+    "id": 95,
+    "name": "Anda Curry",
+    "quantity": 26
+  },
+  {
+    "id": 96,
+    "name": "Egg Bhurji",
+    "quantity": 11
+  },
+  {
+    "id": 97,
+    "name": "Chicken 65",
+    "quantity": 12
+  },
+  {
+    "id": 98,
+    "name": "Veg Pulao",
+    "quantity": 11
+  },
+  {
+    "id": 99,
+    "name": "Jeera Rice",
+    "quantity": 16
+  },
+  {
+    "id": 100,
+    "name": "Tamarind Rice",
+    "quantity": 13
+  },
+  {
+    "id": 101,
+    "name": "Curd Rice",
+    "quantity": 12
+  },
+  {
+    "id": 102,
+    "name": "Lemon Rice",
+    "quantity": 13
+  },
+  {
+    "id": 103,
+    "name": "Puliogare",
+    "quantity": 5
+  },
+  {
+    "id": 104,
+    "name": "Sambar Rice",
+    "quantity": 15
+  },
+  {
+    "id": 105,
+    "name": "Vegetable Kurma",
+    "quantity": 29
+  }
+]
