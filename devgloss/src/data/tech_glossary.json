@@ -1,0 +1,205 @@
+[
+  {
+    "term": "SSR",
+    "definition": "Server-Side Rendering is the process of rendering web pages on the server instead of in the browser.",
+    "category": "Frontend",
+    "example": "Next.js uses SSR to pre-render pages on the server before sending them to the client.",
+    "related": [
+      "CSR",
+      "Next.js"
+    ]
+  },
+  {
+    "term": "CI/CD",
+    "definition": "Continuous Integration and Continuous Deployment are practices that automate testing and deployment in software development.",
+    "category": "DevOps",
+    "example": "GitHub Actions is a popular tool for implementing CI/CD pipelines.",
+    "related": [
+      "GitHub Actions",
+      "Jenkins"
+    ]
+  },
+  {
+    "term": "WebSocket",
+    "definition": "WebSocket is a communication protocol that provides full-duplex communication channels over a single TCP connection.",
+    "category": "Backend",
+    "example": "Real-time chat apps often use WebSocket to update messages without page refresh.",
+    "related": [
+      "HTTP",
+      "Polling"
+    ]
+  },
+  {
+    "term": "Monorepo",
+    "definition": "A Monorepo is a software development strategy where multiple projects are stored in the same repository.",
+    "category": "Architecture",
+    "example": "Google and Facebook manage their codebases using monorepos.",
+    "related": [
+      "Microservices",
+      "Monolith"
+    ]
+  },
+  {
+    "term": "Duck Typing",
+    "definition": "Duck Typing is a programming concept where an object's suitability is determined by the presence of methods and properties, rather than the actual type.",
+    "category": "Programming",
+    "example": "In Python, if it walks like a duck and quacks like a duck, it's treated like a duck.",
+    "related": [
+      "Type Checking",
+      "Polymorphism"
+    ]
+  },
+  {
+    "term": "CSR",
+    "definition": "Client-Side Rendering is the rendering of web content in the browser using JavaScript.",
+    "category": "Frontend",
+    "example": "React apps by default use CSR to render components on the client.",
+    "related": [
+      "SSR",
+      "Hydration"
+    ]
+  },
+  {
+    "term": "SPA",
+    "definition": "Single Page Application is a web app that dynamically rewrites the current page rather than loading entire new pages from a server.",
+    "category": "Frontend",
+    "example": "React and Angular are commonly used to build SPAs.",
+    "related": [
+      "CSR",
+      "Routing"
+    ]
+  },
+  {
+    "term": "REST API",
+    "definition": "A REST API (Representational State Transfer) is an architectural style for providing standards between computer systems on the web.",
+    "category": "Backend",
+    "example": "A GET request to /api/users returns a list of users in a REST API.",
+    "related": [
+      "HTTP Methods",
+      "JSON",
+      "GraphQL"
+    ]
+  },
+  {
+    "term": "JWT",
+    "definition": "JSON Web Token is a compact, URL-safe means of representing claims to be transferred between two parties.",
+    "category": "Security",
+    "example": "JWTs are used for stateless authentication in web applications.",
+    "related": [
+      "OAuth",
+      "Authentication"
+    ]
+  },
+  {
+    "term": "Microservices",
+    "definition": "Microservices is an architectural style that structures an application as a collection of small services that are independently deployable.",
+    "category": "Architecture",
+    "example": "Each microservice in an e-commerce app can handle product, order, and payment separately.",
+    "related": [
+      "Monolith",
+      "Monorepo",
+      "API Gateway"
+    ]
+  },
+  {
+    "term": "GraphQL",
+    "definition": "GraphQL is a query language for APIs that allows clients to request exactly the data they need.",
+    "category": "Backend",
+    "example": "Unlike REST, GraphQL lets clients request multiple resources in a single query.",
+    "related": [
+      "REST",
+      "API",
+      "Apollo"
+    ]
+  },
+  {
+    "term": "TypeScript",
+    "definition": "TypeScript is a superset of JavaScript that adds static typing.",
+    "category": "Programming",
+    "example": "TypeScript helps developers catch errors during development before they reach production.",
+    "related": [
+      "JavaScript",
+      "Static Typing"
+    ]
+  },
+  {
+    "term": "Hydration",
+    "definition": "Hydration is the process of attaching event listeners to HTML content that was rendered on the server.",
+    "category": "Frontend",
+    "example": "Next.js hydrates the HTML on the client to make it interactive.",
+    "related": [
+      "SSR",
+      "CSR"
+    ]
+  },
+  {
+    "term": "OAuth",
+    "definition": "OAuth is an open standard for access delegation commonly used for token-based authentication.",
+    "category": "Security",
+    "example": "You can log into many apps using OAuth with Google or Facebook.",
+    "related": [
+      "JWT",
+      "Authorization"
+    ]
+  },
+  {
+    "term": "Docker",
+    "definition": "Docker is a platform that enables developers to build, share, and run applications in containers.",
+    "category": "DevOps",
+    "example": "You can run your app consistently across different environments using Docker.",
+    "related": [
+      "Containers",
+      "Kubernetes"
+    ]
+  },
+  {
+    "term": "Kubernetes",
+    "definition": "Kubernetes is an open-source platform designed to automate deploying, scaling, and operating application containers.",
+    "category": "DevOps",
+    "example": "Kubernetes can manage containerized applications in a clustered environment.",
+    "related": [
+      "Docker",
+      "Orchestration"
+    ]
+  },
+  {
+    "term": "API Gateway",
+    "definition": "An API Gateway is a server that acts as an API front-end, handling requests, enforcing security, and routing.",
+    "category": "Architecture",
+    "example": "AWS API Gateway can throttle requests and protect backend services.",
+    "related": [
+      "Microservices",
+      "Reverse Proxy"
+    ]
+  },
+  {
+    "term": "Polyfill",
+    "definition": "A polyfill is a piece of code that provides modern functionality on older browsers that do not natively support it.",
+    "category": "Frontend",
+    "example": "Polyfills are often used to provide support for new JavaScript features in older browsers.",
+    "related": [
+      "Babel",
+      "Transpiler"
+    ]
+  },
+  {
+    "term": "Transpiler",
+    "definition": "A transpiler is a tool that converts source code written in one language into another language with a similar level of abstraction.",
+    "category": "Programming",
+    "example": "Babel transpiles ES6 JavaScript into older ES5 syntax for broader browser compatibility.",
+    "related": [
+      "Babel",
+      "Compiler"
+    ]
+  },
+  {
+    "term": "Lazy Loading",
+    "definition": "Lazy Loading is a design pattern that delays loading of non-critical resources at page load time.",
+    "category": "Frontend",
+    "example": "React supports lazy loading components with React.lazy and Suspense.",
+    "related": [
+      "Code Splitting",
+      "Performance"
+    ]
+  }
+]

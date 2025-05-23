@@ -5,18 +5,22 @@ function App() {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState([]);
 
-  function searchTerm(word) {
-    if (word.length <= 2) return;
-    setResult(items.filter((item) => item.name.toLowerCase().includes(word) ? item : ""));
-  }
-
   useEffect(() => {
-    let timer = setTimeout(() => {
-      searchTerm(query)
+    if (query.length <= 2) {
+      setResult([]);
+      return;
+    }
+
+    const timer = setTimeout(() => {
+      const normalizedQuery = query.toLowerCase();
+      const filtered = items.filter(item =>
+        item.name.toLowerCase().includes(normalizedQuery)
+      );
+      setResult(filtered);
     }, 500);
 
     return () => clearTimeout(timer);
-  }, [query])
+  }, [query]);
 
   return (
     <div>
@@ -26,7 +30,6 @@ function App() {
       <div>
         <ul>
           {result.map(item => <li key={item.id}>{item.name}</li>)}
-
         </ul>
       </div>
     </div>
