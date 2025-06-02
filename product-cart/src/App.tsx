@@ -75,7 +75,7 @@ function App() {
         <Cart cartItems={cartItems} onSetShowCart={setShowCart} />
       </div>
       <div className="flex justify-end ">
-        {cartItems.length > 0 && showCart && <CartItems cartItems={cartItems} />}
+        {cartItems.length > 0 && showCart && <CartItems cartItems={cartItems} setCartItems={setCartItems} />}
       </div>
       <ProductList products={products} onAddToCart={handleAddToCart} />
     </div>
