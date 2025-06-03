@@ -28,14 +28,15 @@ const CartItems = memo(function ({ cartItems, setCartItems }) {
     function handleDelete(id) {
         setCartItems(cartItems.filter(item => item.id !== id))
     }
+
     return <div className="absolute right-2 top-40 w-[400px] bg-lime-100 rounded-md p-4 max-h-100 overflow-y-auto">
-        <ul>
-            {cartItems.map(item => <CartItem item={item} key={item.id} onIncrease={increaseQuantity} onDecrease={decreaseQuantity} onDelete={handleDelete} />)}
-        </ul>
-        <div className="pt-5 flex justify-between font-semibold">
+        <div className="py-5 flex justify-between font-semibold">
             <p>Cart Total: </p>
             <p>₹{cartTotal}</p>
         </div>
+        <ul>
+            {cartItems.map(item => <CartItem item={item} key={item.id} onIncrease={increaseQuantity} onDecrease={decreaseQuantity} onDelete={handleDelete} />)}
+        </ul>
     </div >
 })
 
