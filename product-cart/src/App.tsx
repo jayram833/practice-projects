@@ -24,13 +24,14 @@ function App() {
       if (prevCartItems.some(item => item.id === newItem.id)) {
         return prevCartItems.map(item =>
           item.id === newItem.id
-            ? { ...item, quantity: item.quantity + 1 }
+            ? { ...item, quantity: item.quantity + 1, totalPrice: item.price * (item.quantity + 1) }
             : item
         );
       } else {
-        return [...prevCartItems, { ...newItem, quantity: 1 }];
+        return [...prevCartItems, { ...newItem, quantity: 1, totalPrice: newItem.price }];
       }
     });
+
   }, []);
 
   function handleChange(e) {

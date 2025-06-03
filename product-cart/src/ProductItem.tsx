@@ -21,7 +21,4 @@ function ProductItem({ product, onAddToCart }: ProductProps) {
     )
 }
 
-
-
-
 export default ProductItem
