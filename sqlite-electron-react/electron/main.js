@@ -1,8 +1,8 @@
-import { app, BrowserWindow } from "electron";
+import { app, BrowserWindow, ipcMain } from "electron";
 import path, { dirname } from "path";
 import { fileURLToPath } from "url";
 import installExtension from "electron-devtools-installer";
-import "./todoHandler.js"
+import { getAllProducts, addProduct, deleteProduct } from './dbOps.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -41,3 +41,16 @@ app.whenReady().then(() => {
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit();
 });
+
+
+ipcMain.handle('get-products', () => {
+    return getAllProducts();
+});
+
+ipcMain.handle('add-product', (event, product) => {
+    return addProduct(product);
+});
+
+ipcMain.handle("delete-product", (e, id) => {
+    return deleteProduct(id);
+})
